@@ -24,7 +24,7 @@ Visited the web app on port 80 and ran Gobuster to find hidden directories:
 gobuster dir -u http://[Target IP] -w /usr/share/seclists/Discovery/Web-Content/common.txt
 ```
 
-Found `/data` among other endpoints. Navigating to `/data/0` revealed a downloadable PCAP file — an IDOR vulnerability allowing access to another user's capture.
+Found `/data` among other endpoints. Navigating to `/data/0` revealed a downloadable PCAP file, an IDOR vulnerability allowing access to another user's capture.
 
 ## Credential Discovery
 
